@@ -1,0 +1,13 @@
+5.1.2 - https://www.imsglobal.org/spec/lti/v1p3/cert/#student-payload-without-pii-testing
+
+Test Name                             Test Description
+Payload is LTI 1.3                    Tests that JWT received conforms to format of 1.3 Core Launch JWT
+Payload Timestamps Valid              The iat and exp Timestamps are valid
+Payload Signed with RSA 256           Header for JWT confirmed that signing done is RSA 256
+Payload Signature Valid               The KID in the JWT Header corresponds to the correct Public Key on the Well-Known URL and the Public Key for this KID correctly verifies the JWT Signature
+Payload is Complete                   All Required 1.3 Core Launch Claims are present
+Payload LTI Version                   Required LTI Version Claim is set correctly to 1.3.0
+Payload Roles Correct                 The Roles in the JWT are those of the Learner/Student and not an Instructor
+Payload Without PII                   No Personal Identifying Information is present in the claims provided in the JWT for PII
+Payload is Free of Extra Whitespace   There MUST NOT be extra Whitespace before or after any values in the JWT
+Payload Expected Received             You MUST Affirm that All Expected Values in the JWT were received
